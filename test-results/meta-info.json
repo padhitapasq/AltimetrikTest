@@ -1,0 +1,29 @@
+{
+  "reports": [
+    {
+      "name": "Altimetrik Demo",
+      "dir": "test-results/10_Jul_2017_06_40_PM/json",
+      "startTime": 1499712041874
+    },
+    {
+      "name": "Altimetrik Demo",
+      "dir": "test-results/10_Jul_2017_06_23_PM/json",
+      "startTime": 1499711832036
+    },
+    {
+      "name": "Altimetrik Demo",
+      "dir": "test-results/10_Jul_2017_12_48_PM/json",
+      "startTime": 1499690936078
+    },
+    {
+      "name": "Altimetrik Demo",
+      "dir": "test-results/10_Jul_2017_12_45_PM/json",
+      "startTime": 1499690755142
+    },
+    {
+      "name": "Altimetrik Demo",
+      "dir": "test-results/10_Jul_2017_12_39_PM/json",
+      "startTime": 1499690400019
+    }
+  ]
+}

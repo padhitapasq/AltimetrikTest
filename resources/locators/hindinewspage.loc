@@ -1,0 +1,4 @@
+hindi.news.trending.now = {\"locator\":\"xpath=//div[@class='trend']/a\",\"desc\":\"Trending now\"}
+hindi.news.trending.now.list = {\"locator\":\"xpath=//div[@class='trendlist']/ul/li/a\",\"desc\":\"Trending now list\"}
+hindi.news.image.list = {\"locator\":\"xpath=//div[@class='maintable12']/div[1]/div[1]/div\",\"desc\":\"Image list\"}
+hindi.news.news.list = {\"locator\":\"xpath=//div[@class='maintable12']/div[1]/div[2]/div[1]/div\",\"desc\":\"News list\"}

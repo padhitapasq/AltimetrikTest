@@ -1,0 +1,14 @@
+timesofindia.notification.popup = {\"locator\":\"xpath=//div[@class='ntfc_content']\",\"desc\":\"Notification content\"}
+timesofindia.notification.popup.enable.button = {\"locator\":\"xpath=//a[text()='Enable']\",\"desc\":\"Notification enable content\"}
+timesofindia.notification.popup.notnow.button = {\"locator\":\"xpath=//a[text()='Not Now']\",\"desc\":\"Notification not now content\"}
+timesofindia.topstory.list = {\"locator\":\"xpath=//div[@class='top-story']/ul/li\",\"desc\":\"Top Story list\"}
+timesofindia.logo = {\"locator\":\"xpath=//div[@class='logo']\",\"desc\":\"Top Story list\"}
+timesofindia.topnews.text ={\"locator\":\"xpath=//h1[text()='TOP NEWS STORIES']\",\"desc\":\"Top news text\"}
+timesofindia.entertainment.title = {\"locator\":\"xpath=//div[@class='entrmnt-wdgt-outer']\",\"desc\":\"Entertainment news section\"}
+timesofindia.entertainment.news.list = {\"locator\":\"xpath=//div[@class='entrmnt-wdgt-outer']//div[@class='stories']/ul/li\",\"desc\":\"Entertainment news list\"}
+timesofindia.entertainment.image.list = {\"locator\":\"xpath=//div[@class='entslides']/ul/li",\"desc\":\"Entertainment image list\"}
+timesofindia.entertainment.back.arrow = {\"locator\":\"xpath=//span[@class='sprite_bg prev']",\"desc\":\"Entertainment prev button\"}
+timesofindia.entertainment.next.arrow = {\"locator\":\"xpath=//span[@class='sprite_bg next']",\"desc\":\"Entertainment next button\"}
+timesofindia.entertainment.text.header = {\"locator\":\"xpath=//*[@id='nav-entertainment']",\"desc\":\"Entertainment image list\"}
+timesofindia.entertainment.language.list = {\"locator\":\"xpath=//li[@id='nav-entertainment']//div[@class='left-column']/ul/li/a",\"desc\":\"Entertainment language list\"}
+timesofindia.entertainment.subnews.list = {\"locator\":\"xpath=//ul[@id='rnaventertainment']/li/a",\"desc\":\"Entertainment sub news list\"}

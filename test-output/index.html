@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-QAS_Demo">
+              <span class="suite-name border-failed">QAS Demo</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-QAS_Demo">
+                    <span>C:\Users\tapas.padhi\WellsAssignment\WellsAssignmentProject\config\testrun_config.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-QAS_Demo">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-QAS_Demo">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-QAS_Demo">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-QAS_Demo">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-QAS_Demo">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-QAS_Demo">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-QAS_Demo" class="hide-methods failed suite-QAS_Demo"> (hide)</a> <!-- hide-methods failed suite-QAS_Demo -->
+                      <a href="#" panel-name="suite-QAS_Demo" class="show-methods failed suite-QAS_Demo"> (show)</a> <!-- show-methods failed suite-QAS_Demo -->
+                    </span>
+                    <div class="method-list-content failed suite-QAS_Demo">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-QAS_Demo" title="com.timesofindia.tests.ToiTest" hash-for-method="toiPageVerification">toiPageVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-QAS_Demo -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-QAS_Demo" class="panel QAS_Demo">
+          <div class="suite-QAS_Demo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.timesofindia.tests.ToiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="toiPageVerification">
+                  </a> <!-- toiPageVerification -->
+                  <span class="method-name">toiPageVerification</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;li&gt;...&lt;/li&gt; is not clickable at point (187, 621). Other element would receive the click: &lt;iframe id=&quot;google_ads_iframe_/7176/TOI_MWeb/TOI_MWeb_Home/TOI_MWeb_HP_PT_FBN_0&quot; title=&quot;3rd party ad content&quot; name=&quot;google_ads_iframe_/7176/TOI_MWeb/TOI_MWeb_Home/TOI_MWeb_HP_PT_FBN_0&quot; width=&quot;728&quot; height=&quot;90&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot; style=&quot;border: 0px; vertical-align: bottom;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 128 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;icpl12186&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=true, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\TAPAS~1.PAD\AppData\Local\Temp\scoped_dir5036_29970}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=true, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5433ea5ac80e27019c17d643c82b8e5a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.executeWitoutLog(QAFExtendedWebDriver.java:256)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:252)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.timesofindia.defs.DetailsNewsDefs.verifyNewsTitle(DetailsNewsDefs.java:21)
+	at com.timesofindia.tests.ToiTest.toiPageVerification(ToiTest.java:45)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Times Of India Page verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-QAS_Demo-class-failed -->
+        </div> <!-- panel QAS_Demo -->
+        <div panel-name="test-xml-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\tapas.padhi\WellsAssignment\WellsAssignmentProject\config\testrun_config.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;QAS Demo&quot;&gt;
+  &lt;test name=&quot;DemoTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.timesofindia.tests.ToiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;toiPageVerification&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.timesofindia.tests.ToiTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DemoTest --&gt;
+  &lt;test name=&quot;DemoTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.timesofindia.tests.ToiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;toiPageVerification&quot;/&gt;
+          &lt;include name=&quot;beforeMethod&quot;/&gt;
+          &lt;include name=&quot;afterSuit&quot;/&gt;
+          &lt;include name=&quot;setupMethod&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;setupSuit&quot;/&gt;
+          &lt;include name=&quot;setupTest&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.timesofindia.tests.ToiTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DemoTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- QAS Demo --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for QAS Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">DemoTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DemoTest(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for QAS Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">TOI_Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">toiPageVerification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for QAS Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_QAS_Demo');
+function tableData_QAS_Demo() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'toiPageVerification')
+data.setCell(0, 2, 'com.timesofindia.tests.ToiTest')
+data.setCell(0, 3, 113656);
+window.suiteTableData['QAS_Demo']= { tableData: data, tableDiv: 'times-div-QAS_Demo'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-QAS_Demo">
+              </div> <!-- times-div-QAS_Demo -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for QAS Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">toiPageVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected Notification Pop-Up present : Actual Notification Pop-Up present <a href="../img/toiPageVerification_5pbhkdhk5v8837972.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected Not now button on Pop-Up present : Actual Not now button on Pop-Up present <a href="../img/toiPageVerification_12o1m72d5ncts37973.png" target="_blank">[View Screenshot]</a> </div><div  class="info"><span class="info-label">I </span>Declining popup - Not to receive notofications</div><div  class="info"><span class="info-label">I </span>No notification present</div><div  class="info"><span class="info-label">I </span>Saudi Arabia's king ousts nephew, promotes son as successor
+59 mins ago</div><div  class="info"><span class="info-label">I </span>Presidential poll: Jolt to opposition unity, JD(U) to support Kovind
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Just saying, stuck to a coach I hated, for 20 years: Abhinav Bindra
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Travis Kalanick - Uber's disruptive driving force
+45 mins ago</div><div  class="info"><span class="info-label">I </span>Darjeeling bandh: GJM offers 12-hour 'window' to schools to evacuate students
+54 mins ago</div><div  class="info"><span class="info-label">I </span>Spat with Kohli: Kumble exit seen as triumph for player power
+5 hrs ago</div><div  class="info"><span class="info-label">I </span>FERA cases: Sasikala appears through videoconferencing
+5 mins ago</div><div  class="info"><span class="info-label">I </span>OnePlus 5: 5 reasons to buy and not buy the flagship smartphone
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Honda's new most affordable scooter: 10 things to know
+18 mins ago</div><div  class="info"><span class="info-label">I </span>Akshay Kumar to play PM Narendra Modi in a film?
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>Humour: Twitter reacts to Kumble's resignation
+9 mins ago</div><div  class="info"><span class="info-label">I </span>BMC demolishes actor Arshad Warsi's Versova bungalow
+1 hr ago</div><div  class="info"><span class="info-label">I </span>India most reliable partner for Afghanistan: Pentagon
+4 hrs ago</div><div  class="info"><span class="info-label">I </span>Karnataka waives loan up to Rs 50,000 per farmer
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>International Yoga Day 2017: Complete coverage
+6 hrs ago</div><div  class="info"><span class="info-label">I </span>'Need leave from work to eat chicken': Railway employee's application goes viral
+53 mins ago</div><div  class="info"><span class="info-label">I </span>In pics: Yoga records across India
+1 hr ago</div><div  class="info"><span class="info-label">I </span>Supreme Court refuses to grant interim bail to CS Karnan
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Shocking contestants in Playboy Bunny outfits
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Builders asking flat buyers to make full payment by Jul 1 illegal: Naidu
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>Nearly 3 lakh perform yoga at one place, set world record
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>News title is : Saudi Prince: Saudi Arabia's Mohammed bin Salman elevated to Crown Prince - The Times of India on Mobile</div><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] present : Actual By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] not present <a href="../img/toiPageVerification_t819trpv0zpd37974.png" target="_blank">[View Screenshot]</a> </div><div  class="info"><span class="info-label">I </span>News title is : Nitish Kumar: Setback for opposition unity, JD(U) to support Ram Nath Kovind</div><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] present : Actual By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] not present <a href="../img/toiPageVerification_1vv7859973gn537975.png" target="_blank">[View Screenshot]</a> </div></div></span>
+                <span class="reporter-method-output"><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected Notification Pop-Up present : Actual Notification Pop-Up present <a href="../img/toiPageVerification_5pbhkdhk5v8837972.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected Not now button on Pop-Up present : Actual Not now button on Pop-Up present <a href="../img/toiPageVerification_12o1m72d5ncts37973.png" target="_blank">[View Screenshot]</a> </div><div  class="info"><span class="info-label">I </span>Declining popup - Not to receive notofications</div><div  class="info"><span class="info-label">I </span>No notification present</div><div  class="info"><span class="info-label">I </span>Saudi Arabia's king ousts nephew, promotes son as successor
+59 mins ago</div><div  class="info"><span class="info-label">I </span>Presidential poll: Jolt to opposition unity, JD(U) to support Kovind
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Just saying, stuck to a coach I hated, for 20 years: Abhinav Bindra
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Travis Kalanick - Uber's disruptive driving force
+45 mins ago</div><div  class="info"><span class="info-label">I </span>Darjeeling bandh: GJM offers 12-hour 'window' to schools to evacuate students
+54 mins ago</div><div  class="info"><span class="info-label">I </span>Spat with Kohli: Kumble exit seen as triumph for player power
+5 hrs ago</div><div  class="info"><span class="info-label">I </span>FERA cases: Sasikala appears through videoconferencing
+5 mins ago</div><div  class="info"><span class="info-label">I </span>OnePlus 5: 5 reasons to buy and not buy the flagship smartphone
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Honda's new most affordable scooter: 10 things to know
+18 mins ago</div><div  class="info"><span class="info-label">I </span>Akshay Kumar to play PM Narendra Modi in a film?
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>Humour: Twitter reacts to Kumble's resignation
+9 mins ago</div><div  class="info"><span class="info-label">I </span>BMC demolishes actor Arshad Warsi's Versova bungalow
+1 hr ago</div><div  class="info"><span class="info-label">I </span>India most reliable partner for Afghanistan: Pentagon
+4 hrs ago</div><div  class="info"><span class="info-label">I </span>Karnataka waives loan up to Rs 50,000 per farmer
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>International Yoga Day 2017: Complete coverage
+6 hrs ago</div><div  class="info"><span class="info-label">I </span>'Need leave from work to eat chicken': Railway employee's application goes viral
+53 mins ago</div><div  class="info"><span class="info-label">I </span>In pics: Yoga records across India
+1 hr ago</div><div  class="info"><span class="info-label">I </span>Supreme Court refuses to grant interim bail to CS Karnan
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Shocking contestants in Playboy Bunny outfits
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>Builders asking flat buyers to make full payment by Jul 1 illegal: Naidu
+2 hrs ago</div><div  class="info"><span class="info-label">I </span>Nearly 3 lakh perform yoga at one place, set world record
+3 hrs ago</div><div  class="info"><span class="info-label">I </span>News title is : Saudi Prince: Saudi Arabia's Mohammed bin Salman elevated to Crown Prince - The Times of India on Mobile</div><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] present : Actual By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] not present <a href="../img/toiPageVerification_t819trpv0zpd37974.png" target="_blank">[View Screenshot]</a> </div><div  class="info"><span class="info-label">I </span>News title is : Nitish Kumar: Setback for opposition unity, JD(U) to support Ram Nath Kovind</div><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] present : Actual By.xpath: //*[@name='timesofindia.topnews.text' or @id='timesofindia.topnews.text' or @value='timesofindia.topnews.text'] not present <a href="../img/toiPageVerification_1vv7859973gn537975.png" target="_blank">[View Screenshot]</a> </div></div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.timesofindia.tests.ToiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">toiPageVerificationEntertainment</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-QAS_Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.timesofindia.tests.ToiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuit(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod(public void com.timesofindia.tests.ToiTest.toiPageVerification(), org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toiPageVerification</span>
+                <span class="method-start">84552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">198521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@2805c96b, [TestResult name=toiPageVerification status=FAILURE method=ToiTest.t...)</span>
+                <span class="method-start">199537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">199537 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">199537 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuit(org.testng.TestRunner@2805c96b)</span>
+                <span class="method-start">199585 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

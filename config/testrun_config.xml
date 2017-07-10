@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Altimetrik Demo" verbose="0">
+	<test name="TOI Test" enabled="true">
+		<classes>
+			<class name="com.timesofindia.tests.ToiTest">
+			</class>
+		</classes>
+	</test>
+</suite>

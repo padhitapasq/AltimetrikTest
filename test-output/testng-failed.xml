@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [QAS Demo]">
+  <test name="DemoTest">
+    <classes>
+      <class name="com.timesofindia.tests.ToiTest">
+        <methods>
+          <include name="toiPageVerification"/>
+        </methods>
+      </class> <!-- com.timesofindia.tests.ToiTest -->
+    </classes>
+  </test> <!-- DemoTest -->
+  <test name="DemoTest(failed)">
+    <classes>
+      <class name="com.timesofindia.tests.ToiTest">
+        <methods>
+          <include name="toiPageVerification"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuit"/>
+          <include name="setupMethod"/>
+          <include name="afterMethod"/>
+          <include name="setupSuit"/>
+          <include name="setupTest"/>
+          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.timesofindia.tests.ToiTest -->
+    </classes>
+  </test> <!-- DemoTest(failed) -->
+</suite> <!-- Failed suite [QAS Demo] -->
